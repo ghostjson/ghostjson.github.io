@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Boostrap grid -->
+    <link rel="stylesheet" href="resources/css/grid.css">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Libre+Baskerville" rel="stylesheet">
+    
+    <!-- Jquery -->
+    <script src="resources/js/jquery.js"></script>
+
+    <!-- Loading bar script -->
+    <script src="resources/js/progressbar.min.js"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+
+    <!-- main css -->
+    <link rel="stylesheet" href="resources/css/main.css">
+
+    <!-- main script -->
+    <script src="resources/js/main.js"></script>
+    <title></title>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar row">
+        <div class="col col-md-3 offset-2 menu">
+            <a href="#"><i class="material-icons" id="menu-btn">menu</i></a>
+            <div class="menu-content" id="menu-content">
+                    <div class="link" id="home-menu"><a href="#home">HOME</a></div>
+                    <div class="link" id="about-menu"><a href="#about">ABOUT</a></div>
+                    <div class="link"><a href="#services">SERVICES</a></div>
+                    <div class="link"><a href="#contact">CONTACT</a></div>
+            </div>
+        </div>
+    </nav>
+    <!-- NAVBAR END -->
+
+    <!-- SCROLL TO TOP -->
+    <a href="#" id="scroll" style="display: none;"><span></span></a>
+
+    <!-- BANNER -->
+    <div class="row banner" id="home">
+        <div class="col banner-contents">
+            <p class="hello">HELLO, WORLD.</p>
+            <p class="intro">I'm Akhil Ravindran.</p>
+            <p class="sub">|  WEB DEVELOPER  |  APPLICATION DEVELOPER  |</p>
+    
+            <p> <a href="#" class="aboutme"> MORE ABOUT ME </a></p>
+
+            <div class="social">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-github-square"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- BANNER END -->
+    
+    <!-- ABOUT -->   
+    <div class="row about" id="about">
+        <div class="col about-contents">
+            <div class="top center">
+                <p class="title">ABOUT</p>
+                <h2 class="about-intro">Let me introduce myself</h2>
+                <div class="row">
+                    <div class="col-md-2 offset-2 about-dp">
+                        <img src="resources/photos/pp.jpeg" alt="ghostjson" class="dp">
+                    </div>
+                    <div class="col-md-5 about-text">
+                        Lorem ipsum Exercitation culpa qui dolor consequat exercitation fugiat laborum ex ea eiusmod ad do aliqua occaecat nisi ad irure sunt id pariatur Duis laboris amet exercitation veniam labore consectetur ea id quis eiusmod.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container about-mid">
+        <div class="row">
+            <div class="col-md-4 profile offset-2">
+                <h2 class="profile-title">PROFILE</h2>
+                <p class="profile-content content">
+                    Lorem ipsum Qui veniam ut consequat ex ullamco nulla in non ut esse in magna sint minim officia consectetur nisi commodo ea magna pariatur nisi cillum.
+                </p>
+            </div>
+            <div class="col-md-4 skills">
+                <h2 class="skills-title">SKILLS</h2>
+                <p class="skills-content content">
+                    Lorem ipsum Qui veniam ut consequat ex ullamco nulla in non ut esse in magna sint minim officia consectetur nisi commodo ea magna pariatur nisi cillum.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 details offset-2">
+                <ul>
+                    <li>
+                        <h2>FULLNAME:</h2>
+                        <div class="content">
+                            Akhil Ravindran
+                        </div>
+                    </li>
+                    <li>
+                        <h2>BIRTH DATE:</h2>
+                        <div class="content">
+                            October 23, 1999
+                        </div>
+                    </li>
+                    <li>
+                        <h2>JOB:</h2>
+                        <div class="content">
+                            Freelancer, Back-End Developer
+                        </div>
+                    </li>
+                    <li>
+                        <h2>WEBSITE:</h2>
+                        <div class="content">
+                            ghostjson.github.io
+                        </div>
+                    </li>
+                    <li>
+                        <h2>EMAIL:</h2>
+                        <div class="content">
+                            imakhilravindran@gmail.com
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4 details skillbars">
+                    <ul>
+                        <li>
+                            <h2>HTML5</h2>
+                            <progress id="html5" max="100" value="75"> 70% </progress>
+                        </li>
+                        <li>
+                            <h2>CSS</h2>
+                            <progress id="css" max="100" value="60"> 70% </progress>
+                        </li>
+                        <li>
+                            <h2>JQUERY</h2>
+                            <progress id="jquery" max="100" value="80"> 70% </progress>
+                        </li>
+                        <li>
+                            <h2>PHP</h2>
+                            <progress id="php" max="100" value="95"> 70% </progress>
+                        </li>
+                        <li>
+                            <h2>DJANGO</h2>
+                            <progress id="django" max="100" value="80"> 70% </progress>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 btnhire offset-5">
+                <p> <a href="#" class="hireme"> HIRE ME </a></p>
+            </div>
+        </div>
+    </div>
+    <!-- ABOUT END -->
+
+    <!-- SERVICES -->
+    <div class="services" id="services">
+        <div class="container">
+            <div class="row center">
+                <div class="col-md-12"><p class="title">SERVICES</p></div>
+                <div class="col-md-12">
+                    <h2 class="services-intro">What Can I Do For You?</h2>
+                </div>
+            </div>
+            <div class="row center icon-set">
+                <div class="col-md-4">
+                    <i class="icon material-icons">web</i>
+                </div>
+                <div class="col-md-4">
+                    <i class="icon material-icons">storage</i>
+                </div>
+                <div class="col-md-4">
+                    <i class="icon material-icons">desktop_windows</i>
+                </div>
+            </div>
+            <div class="row center">
+                <div class="col-md-4">
+                    <h3 class="sub-title">Web Design</h3>
+                </div>
+                <div class="col-md-4">
+                    <h3 class="sub-title">Back-End Development</h3>
+                </div>
+                <div class="col-md-4">
+                    <h3 class="sub-title">Desktop Application</h3>
+                </div>
+            </div>
+            <div class="row center">
+                <div class="col-md-4">
+                    <p class="content">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do. dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
+                </div>
+                <div class="col-md-4">
+                    <p class="content">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do. dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
+                </div>
+                <div class="col-md-4">
+                    <p class="content">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do. dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <!-- SERVICES END -->
+
+    <!-- CONTACT -->
+    <div class="contact" id="contact">
+        <div class="container">
+            <div class="center title">CONTACT</div>
+            <div class="center sub-title">I'd Love To Hear From You.</div>
+            <form class="contact-form center">
+                <div class="input-field">
+                    <input type="text" name="name" class="name" placeholder="Name" required>
+                </div>
+                <div class="input-field">
+                    <input type="email" name="email" class="email" placeholder="Email" required>
+                </div>
+                <div class="input-field">
+                    <input type="text" class="subject" name="subject" placeholder="Subject" required>
+                </div>
+                <div class="input-field">
+                    <textarea name="message" placeholder="Message" cols="30" rows="10" required></textarea>
+                </div>
+                <div class="input-field">
+                    <button class="submit" type="submit">SUBMIT</button>
+                </div>
+            </form>
+        </div>
+        <div class="footer">
+            <div class="container">
+                <div class="row center">
+                    <div class="col-md-4">
+                        <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="sub-title">WHERE TO FIND ME</div>
+                        <div class="content"><p>Panikarethu Tharayil,</p><p> Eramathoor, PO Mannar</p></div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="icon"><i class="fas fa-envelope-open-text"></i></div>
+                        <div class="sub-title">EMAIL ME AT</div>
+                        <div class="content"><p>imakhilravindran@gmail.com</p></div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="icon"><i class="fas fa-phone"></i></div>
+                        <div class="sub-title">CALL ME AT</div>
+                        <div class="content"><p>(+91) 815 693 2307</p></div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="website-bottom">
+                    <span>© Copyright GhostJson 2019 | Design by <a href="//github.com/ghostjson/">Akhil</a> </span>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <!-- CONTACT END -->
+</body>
+</html>
