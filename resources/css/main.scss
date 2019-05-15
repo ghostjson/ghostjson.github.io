@@ -435,42 +435,50 @@ body{
         padding: 0;
         overflow-x: hidden; 
       .banner{
-            height: 100vh;
+            height: 100vh !important;
             .hello{
-                font-size: 1.5em !important;
+                font-size: 1.3em !important;
             }
             .intro{
-                font-size: 2em !important;
+                font-size: 1.8em !important;
+                margin-top: 2% !important;
             }
             .banner-contents{
-                margin-top: 45% !important;
+                margin-top: 40% !important;
             }
             .sub{
-                font-size: 0.9em !important;
+                font-size: 0.6em !important;
+                margin-bottom: 18% !important;
             }
-            p.btn{
-                margin: 3em !important;
+            p a{
+                border: 0.5px solid $white !important;
+                
             }
             .aboutme{
                 
                 padding: 1em !important;
             }
             .social{
-                margin-top: 75% !important;
+                margin-top: 45% !important;
+                font-size: 0.8em !important;
+                i{
+                    padding: 2% !important;
+                }
             }
       }
-    }
-    .contact{
+      .contact{
         input{
-            width: inherit !important;
+            width: 95% !important;
         }
         textarea{
-            width:inherit !important;
+            width:95% !important;
         }
         button{
             width:inherit !important;
         }
     }
+    }
+    
     // * {
     //     background: #000 !important;
     //     color: #0f0 !important;

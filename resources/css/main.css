@@ -466,36 +466,42 @@ body .website-bottom a:hover {
     overflow-x: hidden;
   }
   body .banner {
-    height: 100vh;
+    height: 100vh !important;
   }
   body .banner .hello {
-    font-size: 1.5em !important;
+    font-size: 1.3em !important;
   }
   body .banner .intro {
-    font-size: 2em !important;
+    font-size: 1.8em !important;
+    margin-top: 2% !important;
   }
   body .banner .banner-contents {
-    margin-top: 45% !important;
+    margin-top: 40% !important;
   }
   body .banner .sub {
-    font-size: 0.9em !important;
+    font-size: 0.6em !important;
+    margin-bottom: 18% !important;
   }
-  body .banner p.btn {
-    margin: 3em !important;
+  body .banner p a {
+    border: 0.5px solid #FFFFFF !important;
   }
   body .banner .aboutme {
     padding: 1em !important;
   }
   body .banner .social {
-    margin-top: 75% !important;
+    margin-top: 45% !important;
+    font-size: 0.8em !important;
   }
-  .contact input {
-    width: inherit !important;
+  body .banner .social i {
+    padding: 2% !important;
   }
-  .contact textarea {
-    width: inherit !important;
+  body .contact input {
+    width: 95% !important;
   }
-  .contact button {
+  body .contact textarea {
+    width: 95% !important;
+  }
+  body .contact button {
     width: inherit !important;
   }
 }
