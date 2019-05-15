@@ -407,7 +407,8 @@ body{
     display:none;
     -webkit-border-radius:60px;
     -moz-border-radius:60px;
-    border-radius:60px
+    border-radius:60px;
+    z-index: 12;
 }
 #scroll span {
     position:absolute;
@@ -419,10 +420,12 @@ body{
     width:0;
     border:8px solid transparent;
     border-bottom-color:#ffffff;
+        
 }
 #scroll:hover {
     background-color:$orange;
-    opacity:1;filter:"alpha(opacity=100)";
+    opacity:1;
+    filter:"alpha(opacity=100)";
     -ms-filter:"alpha(opacity=100)";
 }
 
@@ -432,8 +435,7 @@ body{
         width: 100%;
         height: 100%;
         margin: 0;
-        padding: 0;
-        overflow-x: hidden; 
+        padding: 0; 
       .banner{
             height: 100vh !important;
             .hello{
@@ -479,6 +481,64 @@ body{
     }
     }
     
+    // ABOUT MOBILE VERSION //
+    .about{
+        .top{
+            margin-top: 20% !important;
+            p.title{
+                font-size: 1.2em !important;
+            }
+            h2.about-intro{
+                font-size: 1.5em !important;
+            }
+            .about-dp{
+                margin: auto !important;
+                margin-bottom:  12% !important; 
+            }
+        }
+
+    }
+    .about-mid{
+        
+        .profile{
+            padding-left: 15px !important;
+            padding-right: 15px !important;
+        }
+        .details{
+            padding-left: 15px !important;
+            padding-right: 15px !important;
+            
+        }
+        .btnhire{
+            margin-top: 1em !important;
+            margin-bottom: 2em !important;
+            padding-left: 15px !important;
+            padding-right: 15px !important;
+            
+            p a.hireme{
+                margin-left:12% !important;
+            }
+        }
+        
+    }
+
+    //  CONTACT  //
+    
+    .footer{
+        // margin-top: 1em !important;
+        padding-top: 1.5em !important;
+        .footer-item{
+            margin-top: 3em !important;
+        }
+    }
+    .website-bottom{
+        font-size: 0.8em !important;
+    }
+    .offset-2, .offset-5{
+        margin: 0% !important;
+        padding: 0% !important; 
+    }
+
     // * {
     //     background: #000 !important;
     //     color: #0f0 !important;

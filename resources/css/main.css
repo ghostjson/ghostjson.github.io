@@ -436,6 +436,7 @@ body .website-bottom a:hover {
   text-indent: -9999px;
   display: none;
   border-radius: 60px;
+  z-index: 12;
 }
 
 #scroll span {
@@ -463,7 +464,6 @@ body .website-bottom a:hover {
     height: 100%;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
   }
   body .banner {
     height: 100vh !important;
@@ -503,6 +503,49 @@ body .website-bottom a:hover {
   }
   body .contact button {
     width: inherit !important;
+  }
+  .about .top {
+    margin-top: 20% !important;
+  }
+  .about .top p.title {
+    font-size: 1.2em !important;
+  }
+  .about .top h2.about-intro {
+    font-size: 1.5em !important;
+  }
+  .about .top .about-dp {
+    margin: auto !important;
+    margin-bottom: 12% !important;
+  }
+  .about-mid .profile {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+  .about-mid .details {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+  .about-mid .btnhire {
+    margin-top: 1em !important;
+    margin-bottom: 2em !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+  .about-mid .btnhire p a.hireme {
+    margin-left: 12% !important;
+  }
+  .footer {
+    padding-top: 1.5em !important;
+  }
+  .footer .footer-item {
+    margin-top: 3em !important;
+  }
+  .website-bottom {
+    font-size: 0.8em !important;
+  }
+  .offset-2, .offset-5 {
+    margin: 0% !important;
+    padding: 0% !important;
   }
 }
 /*# sourceMappingURL=main.css.map */
