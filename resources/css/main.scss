@@ -66,6 +66,7 @@ body{
         background-color: $dark;
         color: $white;
         margin: 0%;
+        height: 100vh;
         .banner-contents{
             text-align: center;
             margin-top: 10%;
@@ -371,7 +372,7 @@ body{
         }
     }
     .website-bottom{
-        margin-top: 8em;
+        margin-top: 4em;
         font-size: 0.9em;
         font-family: $title-font;
         color: $grey;

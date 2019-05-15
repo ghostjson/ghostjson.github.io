@@ -61,6 +61,7 @@ body .banner {
   background-color: #272727;
   color: #FFFFFF;
   margin: 0%;
+  height: 100vh;
 }
 
 body .banner .banner-contents {
@@ -400,7 +401,7 @@ body .footer div.sub-title {
 }
 
 body .website-bottom {
-  margin-top: 8em;
+  margin-top: 4em;
   font-size: 0.9em;
   font-family: "poppins", sans-serif;
   color: #747474;
