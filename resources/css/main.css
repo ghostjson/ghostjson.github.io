@@ -490,7 +490,7 @@ body .website-bottom a:hover {
     padding: 1em !important;
   }
   body .banner .social {
-    margin-top: 45% !important;
+    margin-top: 35% !important;
     font-size: 0.8em !important;
   }
   body .banner .social i {
@@ -535,6 +535,9 @@ body .website-bottom a:hover {
   .about-mid .btnhire p a.hireme {
     margin-left: 12% !important;
   }
+  .services .services-intro {
+    font-size: 1.4em !important;
+  }
   .footer {
     padding-top: 1.5em !important;
   }
@@ -542,7 +545,7 @@ body .website-bottom a:hover {
     margin-top: 3em !important;
   }
   .website-bottom {
-    font-size: 0.8em !important;
+    font-size: 0.5em !important;
   }
   .offset-2, .offset-5 {
     margin: 0% !important;

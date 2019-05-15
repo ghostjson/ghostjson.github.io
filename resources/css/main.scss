@@ -462,7 +462,7 @@ body{
                 padding: 1em !important;
             }
             .social{
-                margin-top: 45% !important;
+                margin-top: 35% !important;
                 font-size: 0.8em !important;
                 i{
                     padding: 2% !important;
@@ -523,6 +523,13 @@ body{
         
     }
 
+    // SERVICES //
+    .services{
+        .services-intro{
+            font-size: 1.4em !important;
+        }
+    }
+
     //  CONTACT  //
     
     .footer{
@@ -533,7 +540,7 @@ body{
         }
     }
     .website-bottom{
-        font-size: 0.8em !important;
+        font-size: 0.5em !important;
     }
     .offset-2, .offset-5{
         margin: 0% !important;
