@@ -136,9 +136,6 @@ body section.sidebar ul.menu li.ticket a {
     padding-left: 0%;
     padding-right: 0%;
   }
-  body section.content-side div.banner {
-    top: 25vh;
-  }
   body section.content-side div.banner h1 {
     font-size: 1.8em;
     font-family: "Montserrat", sans-serif;
