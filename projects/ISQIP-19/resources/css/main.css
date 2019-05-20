@@ -13,6 +13,9 @@
 * {
   margin: 0%;
   padding: 0%;
+  color: green;
+  outline: 1px solid red;
+  background: black;
 }
 
 * a, * a:visited, * a:active {
@@ -32,6 +35,7 @@ body section.content-side div.banner {
   text-align: center;
   position: relative;
   top: 40%;
+  max-height: 100vh;
 }
 
 body section.content-side div.banner h1 {
@@ -65,7 +69,7 @@ body section.sidebar img.logo {
 
 body section.sidebar ul.menu {
   list-style: none;
-  margin-top: 40%;
+  margin-top: 35%;
 }
 
 body section.sidebar ul.menu li {
@@ -170,7 +174,7 @@ body section.sidebar ul.menu li.ticket a {
     margin-top: 20%;
   }
   body section.sidebar ul.menu {
-    margin-top: 65%;
+    margin-top: 30%;
   }
 }
 /*# sourceMappingURL=main.css.map */

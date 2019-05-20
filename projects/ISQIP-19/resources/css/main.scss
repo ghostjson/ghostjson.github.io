@@ -28,9 +28,9 @@ $primary-color: #e5451c;
         text-decoration: none;
         color: #000000;
     }
-    // color: green;
-    // outline: 1px solid red;
-    // background: black;
+    color: green;
+    outline: 1px solid red;
+    background: black;
 }
 
 
@@ -49,6 +49,7 @@ body{
             text-align: center;
             position: relative;
             top: 40%;
+            max-height: 100vh;
             h1{
                 font-size: 4em;
                 font-family: $content-font;
@@ -78,7 +79,7 @@ body{
         }
         ul.menu{
             list-style: none;
-            margin-top: 40%;
+            margin-top: 35%;
             li{
                 position: relative;
                 padding: 5%;
@@ -186,7 +187,7 @@ body{
             }
             
             ul.menu{
-                margin-top: 65%;
+                margin-top: 30%;
             }
         }
     }
