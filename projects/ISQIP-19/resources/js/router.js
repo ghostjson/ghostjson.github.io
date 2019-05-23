@@ -21,9 +21,7 @@ we can define title of each page like this
 // MADE BY AKHIL RAVINDRAN - https://github.com/ghostjson
 
 //store path and its corresponding target //
-let page_mapper = class{
-    
-    registered = {};
+let page_mapper = class {
 
     register(pages){
         this.registered = pages;
