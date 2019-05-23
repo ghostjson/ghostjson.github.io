@@ -11,164 +11,184 @@
 
 */
 * {
-  margin: 0%;
-  padding: 0%;
+    margin: 0;
+    padding: 0;
 }
 
-* a, * a:visited, * a:active {
-  text-decoration: none;
-  color: #000000;
+* a,
+* a:visited,
+* a:active {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.emphasize {
+    color: #e5451c;
+}
+
+::selection {
+    background-color: #e5451c;
+    color: #242424;
 }
 
 body {
-  background: url("../images/background/bg.png");
+    background: url("../images/background/bg.png");
 }
 
 body section.mob-topbar {
-  display: none;
+    display: none;
 }
 
 body section.content-side div.banner {
-  text-align: center;
-  position: relative;
-  top: 40%;
-  max-height: 100vh;
+    text-align: center;
+    position: relative;
+    top: 40%;
+    max-height: 100vh;
 }
 
 body section.content-side div.banner h1 {
-  font-size: 4em;
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
+    font-size: 4em;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
 }
 
 body section.content-side div.banner small {
-  font-size: 1em;
+    font-size: 1em;
+    font-family: "montserrat", sans-serif;
+    font-weight: 600;
 }
 
 body section.content-side div.banner div.mob-ticket-btn {
-  display: none;
+    display: none;
 }
 
 body section.sidebar {
-  background: white;
-  height: 100vh;
-  -webkit-box-shadow: -1px 1px 6px #b9b7b7;
-          box-shadow: -1px 1px 6px #b9b7b7;
+    background: white;
+    height: 100vh;
+    -webkit-box-shadow: -1px 1px 6px #b9b7b7;
+    box-shadow: -1px 1px 6px #b9b7b7;
 }
 
 body section.sidebar img.logo {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  margin-top: 12%;
-  width: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 12%;
+    width: 120px;
 }
 
 body section.sidebar ul.menu {
-  list-style: none;
-  margin-top: 35%;
+    list-style: none;
+    margin-top: 35%;
 }
 
 body section.sidebar ul.menu li {
-  position: relative;
-  padding: 5%;
-  z-index: 0;
-  text-align: center;
-  font-size: 1.5em;
-  font-family: "Raleway", sans-serif;
+    position: relative;
+    padding: 5%;
+    z-index: 0;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: "Raleway", sans-serif;
 }
 
 body section.sidebar ul.menu li div.selected {
-  position: absolute;
-  right: 0px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  background: #F0F2FE;
-  height: 30px;
-  width: 112%;
-  z-index: -1;
-  padding: 20px;
-  -webkit-box-shadow: 1px 1px 6px #b9b7b7;
-          box-shadow: 1px 1px 6px #b9b7b7;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background: #F0F2FE;
+    height: 30px;
+    width: 112%;
+    z-index: -1;
+    padding: 20px;
+    -webkit-box-shadow: 1px 1px 6px #b9b7b7;
+    box-shadow: 1px 1px 6px #b9b7b7;
 }
 
 body section.sidebar ul.menu li.ticket a {
-  color: #e5451c;
-  z-index: 1;
-  font-weight: bold;
+    color: #e5451c;
+    z-index: 1;
+    font-weight: bold;
 }
 
-@media only screen and (max-width: 575.98px) {
-  body section.mob-topbar {
-    display: inline-block;
-    margin-top: 20px;
-    margin-left: 30px;
-    opacity: 1;
-    -webkit-transition: opacity 0.3s;
-    transition: opacity 0.3s;
-  }
-  body section.mob-topbar img.mob-icon {
-    width: 180px;
-  }
-  body section.mob-topbar div.mob-sidebar-btn {
-    float: right;
-    position: absolute;
-    right: -1px;
-    top: 25px;
-    padding-top: 5px;
-    padding-left: 7px;
-    padding-right: 30px;
-    padding-bottom: 0px;
-    font-size: 1.8em;
-    background: #FFFFFF;
-    -webkit-box-shadow: 0px 0px 15px #b9b7b7;
-            box-shadow: 0px 0px 15px #b9b7b7;
-    color: #e5451c;
-  }
-  body section.content-side {
-    opacity: 1;
-    -webkit-transition: opacity 0.3s;
-    transition: opacity 0.3s;
-    padding-left: 0%;
-    padding-right: 0%;
-  }
-  body section.content-side div.banner h1 {
-    font-size: 1.8em;
-    font-family: "Montserrat", sans-serif;
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-  body section.content-side div.banner small {
-    font-size: 0.9em;
-  }
-  body section.content-side div.banner div.mob-ticket-btn {
-    display: block;
-    margin-top: 35vh;
-    width: 100%;
-    background: #e5451c;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    font-size: 0.9em;
-    font-family: "Raleway", sans-serif;
-    font-weight: bold;
-  }
-  body section.content-side div.banner div.mob-ticket-btn a, body section.content-side div.banner div.mob-ticket-btn a:visited, body section.content-side div.banner div.mob-ticket-btn a:active, body section.content-side div.banner div.mob-ticket-btn a:hover {
-    color: #FFFFFF;
-  }
-  body section.sidebar {
-    position: absolute;
-    z-index: 1;
-    width: 250px;
-    right: -1px;
-    font-size: 1.2em;
-    display: none;
-  }
-  body section.sidebar img.logo {
-    margin-top: 20%;
-  }
-  body section.sidebar ul.menu {
-    margin-top: 30%;
-  }
+@media only screen and(max-width: 575.98px) {
+    body section.mob-topbar {
+        display: inline-block;
+        margin-top: 20px;
+        margin-left: 30px;
+        opacity: 1;
+        -webkit-transition: opacity 0.3s;
+        transition: opacity 0.3s;
+    }
+    body section.mob-topbar img.mob-icon {
+        width: 180px;
+    }
+    body section.mob-topbar div.mob-sidebar-btn {
+        float: right;
+        position: absolute;
+        right: -1px;
+        top: 25px;
+        padding: 5px 30px 0 7px;
+        font-size: 1.8em;
+        background: #FFFFFF;
+        -webkit-box-shadow: 0 0 15px #b9b7b7;
+        box-shadow: 0 0 15px #b9b7b7;
+        color: #e5451c;
+    }
+    body section.content-side {
+        opacity: 1;
+        -webkit-transition: opacity 0.3s;
+        transition: opacity 0.3s;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    body section.content-side div.banner {
+        top: 25vh;
+    }
+    body section.content-side div.banner h1 {
+        font-size: 1.8em;
+        font-family: "Montserrat", sans-serif;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    body section.content-side div.banner small {
+        font-size: 0.9em;
+    }
+    body section.content-side div.banner div.mob-ticket-btn {
+        display: block;
+        margin-top: 20vh;
+        width: 100%;
+        background: #e5451c;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 0.9em;
+        font-family: "Raleway", sans-serif;
+        font-weight: bold;
+    }
+    body section.content-side div.banner div.mob-ticket-btn a,
+    body section.content-side div.banner div.mob-ticket-btn a:visited,
+    body section.content-side div.banner div.mob-ticket-btn a:active,
+    body section.content-side div.banner div.mob-ticket-btn a:hover {
+        color: #FFFFFF;
+    }
+    body section.sidebar {
+        position: absolute;
+        z-index: 1;
+        width: 250px;
+        right: -1px;
+        font-size: 1.2em;
+        display: none;
+    }
+    body section.sidebar img.logo {
+        margin-top: 20%;
+    }
+    body section.sidebar ul.menu {
+        margin-top: 30%;
+    }
 }
-/*# sourceMappingURL=main.css.map */
+
+/* COLOR PALETTE */
+/* blackish: #242424
+orangeish: #e5451c */

@@ -1,0 +1,152 @@
+/* contact page styles start here */
+.contact-card {
+    font-family: "Montserrat", sans-serif;
+    position: relative;
+    width: 90%;
+    margin: 3% auto 3%;
+    border-radius: 0.5rem;
+    box-shadow: -1px 0 34px -6px #ADADAD;
+    background-color: white;
+}
+
+.contact-details {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    background-color: #242424;
+    border-radius: 0.5rem 0 0 0.5rem;
+    padding: 5% 0 5% 5%;
+}
+
+.contact {
+    margin-bottom: 5%;
+    height: 20%
+}
+
+.contact-name {
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+
+.contact-designation,
+.contact-phone {
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+    color: whitesmoke;
+}
+
+.location {
+    margin-top: 30%;
+    color: whitesmoke;
+}
+
+.location > * {
+    margin-top: 0.7rem;
+    color: whitesmoke;
+}
+
+.college-website {
+    margin-top: 2rem;
+}
+
+.fa-map-marker-alt, .fa-globe-asia {
+    color: #e5451c;
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.college-website {
+    color: whitesmoke;
+}
+
+.contact-isqip-branding {
+    display: inline-block;
+    text-align: center;
+    margin-top: 5%;
+    width: 49%;
+    height: inherit;
+}
+
+.contact-isqip-branding > img {
+    width: 50%;
+}
+
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    width: 80%;
+    margin: 5% auto 5% auto;
+}
+
+.contact-isqip-branding > p {
+    margin-top: 9%;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    text-align: left;
+    color: #3F3A37;
+    margin-left: 5%;
+}
+
+.college-social {
+    text-align: left;
+    margin: 4.5%;
+}
+
+.college-social>a {
+    color: #3F3A37;
+    color: grey;
+    font-size: 1.2rem;
+    margin: 5% 0.5rem;
+    transition: all 0.5s;
+}
+
+.college-social>a:hover {
+    color: #e5451c;
+}
+
+footer {
+    width: 90%;
+    height: 4rem;
+    font-size: 0.9rem;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2%;
+    border-radius: 0.5rem 0.5rem 0 0;
+    background-color: white;
+    box-shadow: 1px 1px 6px #b9b7b7;
+}
+/* contact page styles end here */
+
+@media only screen and (max-width: 992px) {
+    /* contact page styles start here */
+
+    .contact-card {
+        height: auto;
+    }
+
+    .contact-card > div {
+        width: 100%;
+    }
+
+    .contact-details {
+        display: block;
+        width: 100%;
+        border-radius: 0.5rem 0.5rem 0 0;
+    }
+
+    .contact-details {
+        padding: 7% 0 7% 7%;
+    }
+
+    .contact-isqip-branding > p {
+        margin-left: 6%;
+        margin-right: 3%
+    }
+    /* contact page styles end here */
+}
+
+/* COLOR PALETTE */
+/* blackish: #242424
+orangeish: #e5451c */

@@ -11,8 +11,8 @@
     <!-- boostrap grid -->
     <link rel="stylesheet" href="resources/css/grid.css">
 
-    <!-- main css -->
-    <link rel="stylesheet" href="resources/css/main.css">
+    <!-- javascript router -->
+    <script src="resources/js/router.js"></script>
 
     <!-- Google font -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Raleway:400,500,600,700&display=swap" rel="stylesheet">
@@ -22,6 +22,9 @@
 
     <!-- main js -->
     <script src="resources/js/main.js"></script>
+
+    <!-- main css -->
+    <link rel="stylesheet" href="resources/css/main.css">
 
     <title>ISQIP</title>
 </head>
@@ -41,14 +44,8 @@
                 <!-- END TOP BAR -->
 
                 <!-- CONTENT SIDE -->
-                <section class="content-side col-xs-12 col-sm-8 col-md-9 col-lg-10">
-                    <div class="banner">
-                        <h1>WE'RE BACK WITH BANG!</h1>
-                        <small>10-17 JULY 2019 WITH OVER 15 WORKSHOPS - COLLEGE OF ENGINEERING, CHENGANNUR</small>
-                        <div class="mob-ticket-btn">
-                            <a href="#">Buy Tickets</a>
-                        </div>       
-                    </div>
+                <section class="content-side col-xs-12 col-sm-8 col-md-9 col-lg-10" id="main">
+                    <!-- pages inside here -->
                 </section>
                 <!-- END CONTENT SIDE -->
 
@@ -57,10 +54,10 @@
                     <img src="resources/images/logo/icon_main.png" alt="isqip-logo" class="logo">
                     <ul class="menu">
                         <li class="active"><a href="#">Home</a><div class="selected"></div></li>
-                        <li><a href="#">ISQIP</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li class="ticket"><a href="#">Buy Ticket</a></li>
+                        <li><a href="#/isqip">ISQIP</a></li>
+                        <li><a href="#/faq">FAQ</a></li>
+                        <li><a href="#/contact">Contact Us</a></li>
+                        <li class="ticket"><a href="#/ticket">Buy Ticket</a></li>
                     </ul>
                 </section>
                 <!-- END SIDEBAR -->
