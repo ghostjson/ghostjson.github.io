@@ -1,0 +1,27 @@
+
+
+body{
+    background: #242424;
+}
+body section.sidebar {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+body section.sidebar ul.menu li div.selected {
+    background: #e5451c;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+body section.sidebar ul.menu li.ticket a {
+    color: #FFFFFF;
+}
+
+div.ticket-body header{
+    text-align: center;
+    margin-top: 30%;
+    font-size: 2.5em;
+    font-family: "Montserrat", sans-serif;
+    color: #FFFFFF;
+}
