@@ -1,15 +1,18 @@
-/*
-    VARIABLES
-    RESET DEFAULTS
-    CONTENT SIDE
-    SIDE BAR
-
-    <-MOBILE VERSION->
-        MOBILE TOP BAR
-        MOBILE CONTENT SIDE
-        MOBILE SIDE BAR
-
+/* COLOR PALETTE
+blackish: #242424
+orangeish: #e5451c
 */
+
+/* CONTENTS
+    Global Properties
+    Body
+    Body Banner
+    Body Sidebar
+    Mobile Version
+*/
+
+
+/* Global Properties */
 * {
     margin: 0;
     padding: 0;
@@ -23,6 +26,10 @@
     cursor: pointer;
 }
 
+page-title{
+    display: none;
+}
+
 .emphasize {
     color: #e5451c;
 }
@@ -32,6 +39,23 @@
     color: #242424;
 }
 
+/* screen reader only content class */
+.sr-only {
+    position: absolute;
+    margin: -1px 0 0 -1px;
+    padding: 0;
+    display: block;
+    width: 1px;
+    height: 1px;
+    font-size: 1px;
+    line-height: 1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+    outline: 0;
+}
+
+/* Body */
 body {
     background: url("../images/background/bg.png");
 }
@@ -40,11 +64,13 @@ body section.mob-topbar {
     display: none;
 }
 
+/* body Banner */
 body section.content-side div.banner {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
     text-align: center;
-    position: relative;
-    top: 40%;
-    max-height: 100vh;
+    justify-content: center;
 }
 
 body section.content-side div.banner h1 {
@@ -63,7 +89,10 @@ body section.content-side div.banner div.mob-ticket-btn {
     display: none;
 }
 
+/* body Sidebar */
 body section.sidebar {
+    position: fixed;
+    right: 0;
     background: white;
     height: 100vh;
     -webkit-box-shadow: -1px 1px 6px #b9b7b7;
@@ -74,13 +103,17 @@ body section.sidebar img.logo {
     margin-left: auto;
     margin-right: auto;
     display: block;
-    margin-top: 12%;
+    margin-top: 11vh;
     width: 120px;
 }
 
 body section.sidebar ul.menu {
+    height: 85vh;
     list-style: none;
-    margin-top: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
 }
 
 body section.sidebar ul.menu li {
@@ -110,9 +143,10 @@ body section.sidebar ul.menu li div.selected {
 body section.sidebar ul.menu li.ticket a {
     color: #e5451c;
     z-index: 1;
-    font-weight: bold;
+    font-weight: 600;
 }
 
+/* Mobile Version */
 @media only screen and (max-width: 575.98px) {
     body section.mob-topbar {
         display: inline-block;
@@ -189,6 +223,3 @@ body section.sidebar ul.menu li.ticket a {
     }
 }
 
-/* COLOR PALETTE */
-/* blackish: #242424
-orangeish: #e5451c */

@@ -1,5 +1,4 @@
-
-
+/* Ticket Page */
 body{
     background: #242424;
 }
@@ -18,10 +17,26 @@ body section.sidebar ul.menu li.ticket a {
     color: #FFFFFF;
 }
 
-div.ticket-body header{
+div.ticket-body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+div.ticket-body h1 {
     text-align: center;
-    margin-top: 30%;
-    font-size: 2.5em;
+    font-size: 2em;
+    font-weight: 600;
     font-family: "Montserrat", sans-serif;
+    color: #FFFFFF;  
+}
+
+div.ticket-body p {
+    text-align: center;
+    font-size: 1em;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
     color: #FFFFFF;
 }

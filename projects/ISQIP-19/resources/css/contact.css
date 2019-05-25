@@ -1,4 +1,4 @@
-/* contact page styles start here */
+/* CONTACT Page */
 .contact-card {
     font-family: "Montserrat", sans-serif;
     position: relative;
@@ -118,6 +118,26 @@ footer {
     box-shadow: 1px 1px 6px #b9b7b7;
 }
 /* contact page styles end here */
+
+/* animations styles start here */
+.text-reveal-curtain {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: left;
+    background: #e5451c;
+}
+
+.text-to-reveal {
+    position: relative;
+}
+
+.make-invisible {
+    color: transparent !important;
+}
+/* animations styles start here */
 
 @media only screen and (max-width: 992px) {
     /* contact page styles start here */
