@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CS | ISQIP 19</title>
+
+    <!--    FONTAWESOME ICONS   -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <!-- MAIN STYLESHEET -->
+    <link rel="stylesheet" href="resources/css/main.css">
+    
+    <!-- RESPONSIVE STYLESHEET -->
+    <link rel="stylesheet" href="resources/css/responsive.css">
+
+    <!--    MAIN SCRIPT     -->
+    <script type="text/javascript" src="resources/js/main.js"></script>
+</head>
+<body>
+    
+    <nav>
+        <img class="logo" src="resources/images/logo/logo.png">
+
+        <div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#workshops">Workshops</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="/ISQIP-19/index.html#/contact">Contact Us</a></li>
+            <li><a href="#ticket" id="buy-ticket">Buy Tickets</a></li>    
+        </ul>
+        
+        <!--    SIDEBAR TOGGLE  -->
+        <span class="open-slide">
+            <a href="#" onclick="openSlideMenu()">
+              <svg width="30" height="30">
+                  <path d="M0,5 30,5" stroke="#e5451c" stroke-width="5"/>
+                  <path d="M0,14 30,14" stroke="#e5451c" stroke-width="5"/>
+                  <path d="M0,23 30,23" stroke="#e5451c" stroke-width="5"/>
+              </svg>
+            </a>
+        </span>
+        
+        </div>
+    </nav>
+  
+
+<!--    MOBILE SIDEBAR  -->
+    <div id="side-menu" class="side-nav">
+        <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Buy Tickets</a></li>    
+      </div>
+
+
+<!--    MAIN CONTENT OPENS  -->
+    <div class="main" id="main">
+    
+    <header>
+        <h1><span style="color: #e5451c;">CS</span> ISQIP</h1> 
+    </header>
+
+
+    <div class="content">
+        <div>
+            <h2>Summer School</h2>
+            <p>ISQIP is a week-long internship training program offering both technical and managerial sessions, for the overall development of the student during the summer vacation. </p>
+        </div>
+        <div>
+            <h2>Hack '19</h2>
+            <p>A hackathon is conducted in the last 2 days so as to provide the participants with a platform to work on real time problems by employing the knowlegde the've gained during ISQIP. </p>
+        </div>
+        <div>
+            <h2>Internship</h2>
+            <p>ISQIP is aimed to aid the students to envisage an industrial approach towards their field of study by paving them a way to get their hands on internship opportunities by leading startups and firms in Kerala. </p>
+        </div>
+    </div>
+
+
+    <div class="workshops" id="workshops">
+        <h2>Workshops</h2>
+        <section>
+        <div>
+            <h3>Python Django</h3>
+            <img src="resources/images/cs/django.jpg" alt="Django">
+        </div>
+        <div>
+            <h3>Android App Development</h3>
+            <img src="resources/images/cs/android-studio.png" alt="Android Studio">
+        </div>
+        <div>
+            <h3>Angular 6</h3>
+            <img src="resources/images/cs/angular6.png" alt="Angular 6">
+        </div>
+        </section>
+    </div>
+
+    <div class="schedule" id="schedule">
+        <h2>Schedule</h2>
+        <section>
+        <div class="day">
+            <h2>Day 1</h2>
+            <h3>Introduction to Python and Version Control</h3>
+            <p>09:00 AM - 4:00 PM</p>
+        </div>
+        <div class="day">
+            <h2>Day 2</h2>
+            <h3>Basic Web Development and UI Basics</h3>
+            <p>09:00 AM - 4:00 PM </p>
+        </div>
+        <div class="day">
+            <h2>Day 3,4 & 5</h2>
+            <div>
+                <h3>Parallel Workshops</h3>
+                <span style="font-weight:500;font-size: 1.1em;padding-bottom: 4px; ">
+                <p>Python Django</p>
+                <p>Angular 6</p>
+                <p>Android App Development</p>
+                </span>
+                <p>09:00 AM - 4:00 PM </p>
+            </div>
+        </div>
+        <div class="day">
+            <h2>Day 6 & 7</h2>
+            <!--    HIGHLIGHT HACK 19   -->
+            <h3><span style="font-size: 1.2em;font-weight: 800; color: #e5451c;">HACK</span> <span style="font-size: 1.2em;font-weight: 800;">'19</span></h3>
+            <p>09:00 AM - 4:00 PM </p>
+        </div>
+        </section>
+    </div>
+
+    <div class="ticket" id="ticket">
+        <h2>Pricing Table</h2>
+        <div class="ticket-container">    
+            <div class="pricing-table">
+                <h3>IEEE CS <span style="color: #242424">MEMBERS</span></h3>
+                <div>
+                    <ul class="plan-info">
+                    <li><i class="fa fa-check-circle" aria-hidden="true"></i>Certificate</li>
+                    <li><i class="fa fa-check-circle" aria-hidden="true"></i> Coffee Break refreshment</li>
+                    <li><i class="fa fa-check-circle" aria-hidden="true"></i> Swags</li>
+                    <li><i class="fa fa-check-circle" aria-hidden="true"></i> Access to all Sessions</li>
+                    </ul>
+                </div>
+                <div class="price">
+                    <h4>₹ 650</h4>
+                </div>
+                <div class="register">
+                    <a href="https://www.yepdesk.com/cs-isqip-early-bird-registration">Register</a>
+                </div>
+            </div>
+            <div class="pricing-table">
+                <h3>IEEE <span style="color: #242424">MEMBERS</span></h3>
+                <div>
+                    <ul class="plan-info">
+                    <li><i class="fa fa-check-circle" aria-hidden="true"></i> Certificate</li>
+                    <li><i class="fa fa-check-circle" aria-hidden="true"></i> Coffee Break refreshment</li>
+                    <li><i class="fa fa-check-circle" aria-hidden="true"></i> Swags</li>
+                    <li><i class="fa fa-check-circle" aria-hidden="true"></i> Access to all Sessions</li>
+                    </ul>
+                </div>
+                <div class="price">
+                    <h4>₹ 750</h4>
+                </div>
+                <div class="register">
+                    <a href="https://www.yepdesk.com/cs-isqip-early-bird-registration">Register</a>
+                </div>
+            </div>
+            <div class="pricing-table">
+                <h3>NON IEEE <span style="color: #242424">MEMBERS</span></h3>
+                <div>
+                    <ul class="plan-info">
+                    <li><i class="fa fa-check-circle" aria-hidden="true"></i> Certificate</li>
+                    <li><i class="fa fa-check-circle" aria-hidden="true"></i> Coffee Break refreshment</li>
+                    <li><i class="fa fa-check-circle" aria-hidden="true"></i> Swags</li>
+                    <li><i class="fa fa-check-circle" aria-hidden="true"></i> Access to all Sessions</li>
+                    </ul>
+                </div>
+                <div class="price">
+                    <h4>₹ 1000    </h4>
+                </div>
+                <div class="register">
+                    <a href="https://www.yepdesk.com/cs-isqip-early-bird-registration">Register</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <p>©2018. All Rights Reserved. Designed With <span style="color: red;">&hearts;</span> By DEVCOM</p>
+    </footer>
+
+<!--    MAIN CONTENT CLOSED    -->
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,355 @@
+/*  MOBILE VERSION  */
+
+/* 
+    COLOR PALETTE
+     blackish: #242424
+     orangeish: #e5451c
+
+*/
+
+/*  
+    CONTENTS       
+
+        GLOBAL PROPERTIES
+        NAVBAR
+        SIDE-MENU
+        HEADER
+        CONTENT
+        WORKSHOPS
+        SCHEDULE
+        FOOTER
+    
+*/
+@media only screen and (max-width: 575.98px) {
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+}
+
+nav {
+    height: 12vh;
+    align-content: center;
+    text-align: center;
+}
+
+nav img{
+    float: left;
+    height: 28px;
+    padding: 20px;
+}
+
+nav div {
+    height: 42px;
+    padding: 20px;
+    display: flex;
+    justify-content: right;
+    text-align: center;
+}
+
+nav ul {
+display: none;
+}
+
+nav ul li a {
+    font-size: 1em;
+    font-weight:600;
+    padding: 15px;
+    text-decoration: none;
+    color: #242424;
+}
+
+/*
+.open-slide {
+    position: fixed;
+}
+*/
+
+.side-nav{
+    height:100vh;
+    position:fixed;
+    width: 0;
+    top:0;
+    right:0;
+    background-color:#242424;
+    overflow-x:hidden;
+    padding-top:60px;
+    transition:0.5s;
+}
+  
+.side-nav a{
+    padding:5px 5px 5px 30px;
+    text-decoration:none;
+    font-size:20px;
+    color:#e5451c;
+    display:block;
+    transition:0.3s;
+}
+  
+.side-nav a:hover{
+    color:#fff;
+}
+  
+.side-nav .btn-close{
+    position:absolute;
+    top:0;
+    right:22px;
+    font-size: 55px;
+    margin-left:50px;
+}
+
+header {
+    height: 88vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1 {
+    color: #242424;
+    font-size: 2.3em;
+}
+
+div.content {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-evenly;
+    background-color: white;
+    padding-bottom: 8vh;
+}
+
+div.content div {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;    
+    background-color:white;
+    width: 65vw;
+    height: 40vh;
+    border-radius: 15px;
+    border: solid 0.4px rgba(0,0,0,0.07);
+}
+
+div.content div:hover {
+    -webkit-box-shadow: 0px 0px 27px -9px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 0px 27px -9px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 27px -9px rgba(0,0,0,0.3);
+}
+
+div.content div h2 {
+    color: #242424;
+    font-size: 1em;  
+    padding: 3px;
+}
+
+div.content div p {
+    color: #656565;
+    padding: 7px;
+    font-size: 0.62em;  
+}
+
+div.workshops {
+    height: 790px;
+    width: 100%;
+    text-align: center;
+}
+
+div.workshops h2 {
+    color: #e5451c;
+    padding: 15px;
+    font-size: 1.8em;
+}
+
+div.workshops section{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+div.workshops section div {
+    padding-left:15px;
+    padding-right:15px;
+    width: 65vw;
+    height: 180px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-shadow: 0px 0px 27px -9px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 27px -9px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 27px -9px rgba(0,0,0,0.2);
+}
+
+div.workshops section div h3 {
+    font-weight: 600;
+    color: #242424;
+    font-size: 0.9em;  
+    padding: 12px;
+}   
+
+div.workshops section div img {
+    width: 70vw;
+    border-radius: 5px;
+}
+
+div.schedule {
+    height: 1200px;
+    width: 100%;
+    text-align: center;
+}
+
+div.schedule h2 {
+    color: #e5451c;
+    padding: 15px;
+    font-size: 1.8em;
+}
+
+div.schedule section {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-evenly;
+    background-color: white;
+}
+
+div.schedule .day{
+    margin: 20px;
+    padding: 10px;
+    width: 65vw;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;    
+    background-color:white;
+    border-radius: 15px;
+    border: solid 0.4px rgba(0,0,0,0.07);
+} 
+
+div.schedule .day:hover {
+    -webkit-box-shadow: 0px 0px 27px -9px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 27px -9px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 27px -9px rgba(0,0,0,0.2);
+}
+
+div.schedule .day h2 {
+    font-weight: 700;
+    font-size: 1.3em;
+    color: #242424;
+    padding: 4px;
+}
+
+div.schedule .day h3 {
+    font-size: 0.9em;
+    font-weight: 500;
+    color: #242424;
+    padding:4px;
+}
+
+div.schedule .day p {
+    color: #242424;
+    font-size: 0.8em;
+}
+
+div.ticket {
+    height: 1350px;
+    width: 100%;
+    text-align: center;
+}
+
+div.ticket h2 {
+    color: #e5451c;
+    padding: 15px;
+    font-size: 1.8em;
+}
+
+div.ticket .ticket-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.ticket .pricing-table {
+    width: 65vw;
+    height:350px;
+    margin:20px;   
+    border-radius: 15px;
+    border: solid 0.4px rgba(0,0,0,0.07);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div.ticket .pricing-table ul.plan-info {
+    list-style:none;    
+}
+
+div.ticket .pricing-table h3 {
+    font-size: 1em;
+    font-weight: 500;
+    padding:4px;
+    color: #e5451c;
+}
+
+div.ticket .pricing-table ul.plan-info li i {
+    color: #e5451c;
+}
+
+div.ticket .pricing-table ul.plan-info li {
+    padding: 6px;
+}
+
+div.ticket .pricing-table h4 {
+    font-weight: 400;
+    font-size: 0.9em;
+    padding: 6px;
+    margin-bottom: 4    px;
+}
+
+div.ticket .pricing-table a {
+    text-decoration: none;
+    color:white;
+    font-style: italic;
+}
+
+div.ticket .pricing-table .register {
+    background-color: #e5451c;
+    width: 100px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+footer {
+    width: 100%;
+    margin: 0 auto;
+    height: 80px;
+    font-size: 0.9rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 27px -9px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 27px -9px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 27px -9px rgba(0,0,0,0.2);
+}
+
+footer p {
+    font-weight: 600;
+    font-size: 0.5em;
+}
+
+}

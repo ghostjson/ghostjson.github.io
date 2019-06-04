@@ -47,6 +47,7 @@ let Route = function(paths){
     let xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
+            preScirpt();
             document.getElementById(update_id).innerHTML = this.responseText;
             pageScript();
         }
@@ -58,21 +59,21 @@ let Route = function(paths){
     let content = document.getElementById('main');
 
     // pageLoader function get url and render data
-    let pageLoader = function(){
+    let pageLoader = function(firstLoad){
 
         let currentPath = window.location.hash.substring(1);
         let target = pages.registeredPages[currentPath];
         if(target != undefined){
             xhttp.open("GET", target, true);
-            xhttp.send();
+            preRequestScript(firstLoad, ()=>xhttp.send());
         }
         else{
             content.innerHTML = 'undefined';
         }
     }
-    
-    pageLoader(); //render page on load
-    window.onhashchange = ()=> pageLoader(); //render page on every url change 
+
+    pageLoader(true); //render page on load
+    window.onhashchange = ()=> pageLoader(false); //render page on every url change
 
 };
 

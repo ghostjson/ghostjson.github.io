@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EE | ISQIP 19</title>
+
+    <!--    FONTAWESOME ICONS   -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <!-- MAIN STYLESHEET -->
+    <link rel="stylesheet" href="resources/css/main.css">
+
+    <!--     RESPONSIVE STYLESHEET -->
+    <link rel="stylesheet" href="resources/css/responsive.css">
+
+    <link rel="stylesheet" href="resources/css/eee.css">
+
+    <!--    MAIN SCRIPT     -->
+    <script type="text/javascript" src="resources/js/main.js"></script>
+</head>
+<body>
+    
+    <nav>
+        <img class="logo" src="resources/images/logo/logo.png">
+
+        <div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#ticket" id="buy-ticket">Buy Tickets</a></li>    
+        </ul>
+        
+        <!--    SIDEBAR TOGGLE  -->
+        <span class="open-slide">
+            <a href="#" onclick="openSlideMenu()">
+              <svg width="30" height="30">
+                  <path d="M0,5 30,5" stroke="#e5451c" stroke-width="5"/>
+                  <path d="M0,14 30,14" stroke="#e5451c" stroke-width="5"/>
+                  <path d="M0,23 30,23" stroke="#e5451c" stroke-width="5"/>
+              </svg>
+            </a>
+        </span>
+        
+        </div>
+    </nav>
+  
+
+<!--    MOBILE SIDEBAR  -->
+    <div id="side-menu" class="side-nav">
+        <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Buy Tickets</a></li>    
+      </div>
+
+
+<!--    MAIN CONTENT OPENS  -->
+    <div class="main" id="main">
+    
+    <header>
+        <h1><span style="color: #e5451c;">EE</span> ISQIP</h1> 
+    </header>
+
+
+    <div class="content">
+        <div>
+            <h2>Summer School</h2>
+            <p>ISQIP is a week-long internship training program offering both technical and managerial sessions, for the overall development of the student during the summer vacation. </p>
+        </div>
+        <div>
+            <h2>Hack '19</h2>
+            <p>A hackathon is conducted in the last 2 days so as to provide the participants with a platform to work on real time problems by employing the knowlegde the've gained during ISQIP. </p>
+        </div>
+        <div>
+            <h2>Internship</h2>
+            <p>ISQIP is aimed to aid the students to envisage an industrial approach towards their field of study by paving them a way to get their hands on internship opportunities by leading startups and firms in Kerala. </p>
+        </div>
+    </div>
+
+    <!-- Nothing Here
+    <div class="workshops" id="workshops">
+    </div>
+    -->
+    
+    <div class="schedule" id="schedule">
+        <h2>Schedule</h2>
+        <section>
+        <div class="day">
+            <h2>Day 1</h2>
+            <h3>Familarisation of Microcontroller and Softwares</h3>
+            <h3>Embedded C Programming</h3>
+            <h3>Interfacing with LED, LDR, IR, and Ultrasonic Sensors</h3>
+            <h3>Interfacing with relay, DC motor, servo motor and drivers </h3>
+        </div>
+        <div class="day">
+            <h2>Day 2</h2>  
+            <h3>Introduction to serial communication modules</h3>
+            <h3>Interfacing with Bluetooth module</h3>
+            <h3>Project making & presentation</h3>
+        </div>
+        <div class="day">
+            <h2>Day 3 & 4</h2>
+            <div>
+                <h3>Introduction to solar grid system & its designing</h3>
+                <h3>Hands on session on solar installation & powering</h3>
+            </div>
+        </div>
+        </section>
+    </div>
+
+    <div class="ticket" id="ticket">
+            <h2>Pricing Table</h2>
+            <div class="ticket-container">    
+                <div class="pricing-table">
+                    <h3>IEEE PES <span style="color: #242424">MEMBERS</span></h3>
+                    <div>
+                        <ul class="plan-info">
+                        <li><i class="fa fa-check-circle" aria-hidden="true"></i>Certificate</li>
+                        <li><i class="fa fa-check-circle" aria-hidden="true"></i> Coffee Break refreshment</li>
+                        <li><i class="fa fa-check-circle" aria-hidden="true"></i> Swags</li>
+                        <li><i class="fa fa-check-circle" aria-hidden="true"></i> Access to all Sessions</li>
+                        </ul>
+                    </div>
+                    <div class="price">
+                        <h4>₹ 550</h4>
+                    </div>
+                    <div class="register">
+                        <a href="https://www.yepdesk.com/ee-isqip-2019-early-bird-registration">Register</a>
+                    </div>
+                </div>
+                <div class="pricing-table">
+                    <h3>IEEE <span style="color: #242424">MEMBERS</span></h3>
+                    <div>
+                        <ul class="plan-info">
+                        <li><i class="fa fa-check-circle" aria-hidden="true"></i> Certificate</li>
+                        <li><i class="fa fa-check-circle" aria-hidden="true"></i> Coffee Break refreshment</li>
+                        <li><i class="fa fa-check-circle" aria-hidden="true"></i> Swags</li>
+                        <li><i class="fa fa-check-circle" aria-hidden="true"></i> Access to all Sessions</li>
+                        </ul>
+                    </div>
+                    <div class="price">
+                        <h4>₹ 700</h4>
+                    </div>
+                    <div class="register">
+                        <a href="https://www.yepdesk.com/ee-isqip-2019-early-bird-registration">Register</a>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+
+    <footer>
+        <p>©2018. All Rights Reserved. Designed With <span style="color: red;">&hearts;</span> By DEVCOM</p>
+    </footer>
+
+<!--    MAIN CONTENT CLOSED    -->
+    </div>
+
+</body>
+</html>

@@ -1,9 +1,11 @@
 /* FAQ pages */
+
 main {
     display: block;
     position: relative;
     box-sizing: border-box;
     padding: 30px;
+    padding-bottom: 10px;
     width: 100%;
     max-width: 920px;
     background-color: #fff;
@@ -58,25 +60,91 @@ main {
 
 div.faq-btn {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 5px;
 }
-div.faq-btn div a{
-  background-color: #e5451c;
-  color: white;
+div.faq-btn div{
+  color: #e5451c;
+  font-size: 1.8em;
   text-decoration: none;
-  padding: 10px 50px;
+  cursor: pointer;
 }
-
+div.faq-btn #faq-btn-prev{
+  text-align: left;
+  padding-left: 8%;
+}
+div.faq-btn #faq-btn-next{
+  text-align: right;
+  padding-right: 8%;
+}
 .page-number{
   text-align: center;
 }
 
+/* FAQ POP UPs */
+.faq-pop-wrapper{
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0%;
+  padding: 0%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+.faq-pop-body{ 
+  max-width: 800px;
+  width: 95%;
+  margin: 0 auto; 
+  text-align: left;
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  transition: -webkit-box-shadow 0.3s;
+  -webkit-box-shadow: 0px 0px 27px -9px rgba(0,0,0,0.05);
+  -moz-box-shadow: 0px 0px 27px -9px rgba(0,0,0,0.05);
+  box-shadow: 0px 0px 27px -9px rgba(0,0,0,0.05);
+}
+.faq-pop-body:hover {
+  -webkit-box-shadow: 0px 0px 27px -9px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 0px 27px -9px rgba(0,0,0,0.3);
+  box-shadow: 0px 0px 27px -9px rgba(0,0,0,0.3);
+}
+.close-btn{
+  width: 100%;
+  text-align: right;
+  font-size: 1.2em;
+  color: #e5451c;
+  transition: color 1s;
+}
+.close-btn:hover{
+  color: #cc3f1c;
+}
+.faq-pop-question{
+  font-size: 2em;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+}
+.faq-pop-answer{
+  font-size: 1em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  position: relative;
+  left: 4%;
+  text-align: left;
+  margin: 2%;
+  color: #666;
+}
+
+
 @media only screen and (max-width: 480px) {
-  .question {
-    padding-right: 0px;
-  }
   main {
+    margin-top:10%;
     padding: 10px;
+  }
+  .question {
+    font-size: 0.9em;
+    padding-right: 0px;
   }
   .answer {
     margin-bottom: 30px;
