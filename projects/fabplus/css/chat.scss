@@ -1,0 +1,80 @@
+// OPTIONS
+$header-color : #CF1925;
+$header-font-color : #FFFFFF;
+$chat-border : 1px solid rgba(177, 170, 170, 0.507);
+$chat-background : rgb(255, 255, 255);
+$chat-color : rgb(224, 224, 224);
+$button-color : #CF1925;
+// OPTIONS END
+*{
+    margin: 0%;
+    padding: 0%;
+}
+a, a:active, a:visited{
+    color: inherit;
+}
+.chatbox{
+    width: 250px;
+    position: fixed;
+    right: 50px;
+    bottom: 0px;
+    header{
+        background: $header-color;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        padding: 7px 3px;
+        padding-left: 12px;
+        font-size: 1em;
+        font-weight: 600;
+        cursor: pointer;
+        color: $header-font-color;
+        span.minimize{
+            float: right;
+            padding-right: 20px;
+            hr{
+                display: inline-block;
+                width: 10px;
+                margin-bottom: 3px;
+            }
+        }
+    }
+    .chats{
+        padding: 10px;
+        border-left: $chat-border;
+        border-right: $chat-border;
+        background: $chat-background;
+        p{
+            background: $chat-color;
+            padding: 12px;
+            max-width: 70%;
+            font-family: 'Lato', serif;
+            border-radius: 12px;
+            margin: 5px 0;
+            width: fit-content;
+            &.admin{
+                float: left;
+            }
+            &.user{
+                float: right;
+            }
+        }
+        height: 200px;
+        overflow-y: scroll;
+    }
+    .bottom{
+        border-top: $chat-border;
+        border-left: $chat-border;
+        border-right: $chat-border;
+        background: $chat-background;
+        input{
+            padding: 6px;
+            font-size: 0.9em;
+            width: 205px;
+            border: none;
+        }
+        a{
+            text-decoration: none;
+            color: $button-color;
+        }
+    }
+}
