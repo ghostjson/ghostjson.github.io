@@ -6,6 +6,28 @@ $chat-background : rgb(255, 255, 255);
 $chat-color : rgb(224, 224, 224);
 $button-color : #CF1925;
 // OPTIONS END
+
+// Small devices
+@mixin sm {
+    @media (max-width: 650px) {
+        @content;
+    }
+ }
+ 
+ // Medium devices
+ @mixin md {
+    @media (max-width: 950px) {
+        @content;
+    }
+ }
+ 
+ // Large devices
+ @mixin lg {
+    @media only screen and (max-width: 1250px) {
+        @content;
+    }
+}
+
 *{
     margin: 0%;
     padding: 0%;
@@ -36,6 +58,9 @@ a, a:active, a:visited{
                 width: 10px;
                 margin-bottom: 3px;
             }
+        }
+        @include sm{
+            display: none;
         }
     }
     .chats{
@@ -77,4 +102,22 @@ a, a:active, a:visited{
             color: $button-color;
         }
     }
+    .mobile-chat{
+        font-size: 2em;
+        background: #FFFFFF;
+        width: fit-content;
+        position: fixed;
+        right: 10px;
+        bottom: 10px;
+        padding: 10px;
+        line-height: 12px;
+        border-radius: 100%;
+        color: #CF1925;
+        box-shadow: 0px 0px 20px rgba(128, 128, 128, 0.575);
+        display: none;
+        @include sm{
+            display: block;
+        }
+    }
+
 }

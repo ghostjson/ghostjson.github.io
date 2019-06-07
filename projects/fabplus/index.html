@@ -5,14 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="css/style.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Lato|Oswald|Roboto&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/chat.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
@@ -38,6 +31,19 @@
             <a href="#"><li>Contact</li></a>
         </ul>
       </div>
+      <div class="mobile-menu">
+        <a class="menu-menu-btn"><i class="fas fa-bars"></i></a>
+        <div class="dropdown-menu">
+            <ul>
+                <a href="#"><li class="active">About</li></a>
+                <a href="#"><li>Services</li></a>
+                <a href="#"><li>Machinery</li></a>
+                <a href="#"><li>Financing</li></a>
+                <a href="#"><li>News</li></a>
+                <a href="#"><li>Contact</li></a>
+            </ul>
+        </div>
+      </div>
     </nav>
     <!-- NAVBAR END -->
 
@@ -62,11 +68,16 @@
     <section class="about-more" id="aboutmore">
         <div class="container">
             <div class="pic-area">
+              <div class="image">  
                 <img src="resources/crop_fabplus.jpg">
-                <p class="about-sub-title"><span>F</span>abplus - 30
-                  years of
-                  experience in
-                  machinery</p>
+              </div>
+            <div class="container">
+              <p class="about-sub-title"><span>F</span>abplus - 30
+                years of
+                experience in
+                machinery</p>
+            </div>
+                
             </div>
             <div class="text-area">
                     <p><span>F</span>abplus was created to offer a better experience when it comes to the windows fabrication industry.
@@ -126,7 +137,10 @@
 	            <input type="text" placeholder="Enter your message ....">
 	            <a href="#"><i class="fas fa-paper-plane"></i></a>
 	        </form>
-	    </div>
+      </div>
+      <div class="mobile-chat">
+          <i class="fas fa-comment-dots"></i>
+      </div>
 	</aside>
 	<!-- CHATBOX END -->
   <script src="scripts/chat.js"></script>

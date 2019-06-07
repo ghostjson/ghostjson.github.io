@@ -12,6 +12,16 @@ a, a:active, a:visited {
   margin: 0 5%;
 }
 
+::-moz-selection {
+  color: #FFFFFF;
+  background: #CF1925;
+}
+
+::selection {
+  color: #FFFFFF;
+  background: #CF1925;
+}
+
 body {
   background: url("../images/Fade4.jpg");
   background-repeat: no-repeat;
@@ -37,6 +47,23 @@ body nav div.logo img {
   padding-left: 250px;
 }
 
+@media (max-width: 950px) {
+  body nav div.logo img {
+    padding-left: 40%;
+  }
+}
+
+@media (max-width: 650px) {
+  body nav div.logo img {
+    width: 75px;
+    padding-left: 30%;
+  }
+}
+
+body nav div.menu {
+  height: 60px;
+}
+
 body nav div.menu ul {
   text-align: right;
   padding-right: 40px;
@@ -47,10 +74,11 @@ body nav div.menu ul li {
   font-size: 1.3em;
   line-height: 60px;
   padding-left: 12px;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Oswald', serif;
   font-weight: 400;
-  -webkit-transition: color 0.5s;
-  transition: color 0.5s;
+  text-transform: uppercase;
+  -webkit-transition: font-size 0.2s;
+  transition: font-size 0.2s;
 }
 
 body nav div.menu ul li.active {
@@ -60,6 +88,61 @@ body nav div.menu ul li.active {
 
 body nav div.menu ul li:hover {
   color: #CF1925;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 1250px) {
+  body nav div.menu ul li {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 950px) {
+  body nav div.menu {
+    display: none;
+  }
+}
+
+body nav div.mobile-menu {
+  display: none;
+  font-size: 1.8em;
+  color: #CF1925;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  text-align: right;
+}
+
+body nav div.mobile-menu .dropdown-menu {
+  background: rgba(255, 255, 255, 0.945);
+  -webkit-box-shadow: 10px 10px 20px #2E2E2E;
+          box-shadow: 10px 10px 20px #2E2E2E;
+  z-index: 1;
+  display: none;
+}
+
+body nav div.mobile-menu .dropdown-menu ul {
+  list-style: none;
+  text-transform: uppercase;
+}
+
+body nav div.mobile-menu .dropdown-menu ul li {
+  padding: 5px 30px;
+  font-size: 0.8em;
+  font-family: 'Oswald', sans-serif;
+  color: #2E2E2E;
+  text-align: center;
+}
+
+body nav div.mobile-menu .dropdown-menu ul li.active {
+  color: #CF1925;
+  font-weight: 600;
+}
+
+@media (max-width: 950px) {
+  body nav div.mobile-menu {
+    display: block;
+  }
 }
 
 body section.about {
@@ -76,6 +159,18 @@ body section.about header {
   text-transform: capitalize;
 }
 
+@media only screen and (max-width: 1250px) {
+  body section.about header {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 650px) {
+  body section.about header {
+    font-size: 1.8em;
+  }
+}
+
 body section.about div.sub-title {
   padding: 30px 30px;
 }
@@ -86,21 +181,54 @@ body section.about div.sub-title small {
   font-family: 'Lato', sans-serif;
 }
 
+@media only screen and (max-width: 1250px) {
+  body section.about div.sub-title small {
+    font-size: 1em;
+  }
+}
+
 body section.about div.about-btn a {
   text-decoration: none;
   color: #FFFFFF;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Lato', serif;
   font-size: 1.1em;
   background: #CF1925;
   padding: 12px;
   text-transform: uppercase;
   border-radius: 20px;
+  -webkit-transition: padding 0.5s ease-out;
+  transition: padding 0.5s ease-out;
+}
+
+body section.about div.about-btn a:hover {
+  padding: 12px 20px;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 1250px) {
+  body section.about div.about-btn a {
+    font-size: 1em;
+  }
 }
 
 body section.about:after {
   content: "";
   display: block;
   height: 220px;
+}
+
+@media (max-width: 950px) {
+  body section.about {
+    margin: 0 100px;
+    margin-top: 200px;
+  }
+}
+
+@media (max-width: 650px) {
+  body section.about {
+    margin: 0 5%;
+    margin-top: 150px;
+  }
 }
 
 body section.about-more .pic-area {
@@ -112,15 +240,37 @@ body section.about-more .pic-area {
   margin-left: 15px;
 }
 
-body section.about-more .pic-area img {
+body section.about-more .pic-area .image img {
   width: 800px;
-  height: 400;
+}
+
+@media only screen and (max-width: 1250px) {
+  body section.about-more .pic-area .image {
+    font-size: 3em;
+    -ms-grid-row: 2;
+    grid-row: 2;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 950px) {
+  body section.about-more .pic-area .image img {
+    width: 600px;
+  }
+}
+
+@media (max-width: 650px) {
+  body section.about-more .pic-area .image img {
+    width: 50vh;
+    height: 150px;
+  }
 }
 
 body section.about-more .pic-area .about-sub-title {
   font-size: 4em;
-  line-height: 54px;
-  font-family: 'Roboto Slab', serif;
+  line-height: 66px;
+  font-family: 'Oswald', serif;
 }
 
 body section.about-more .pic-area .about-sub-title span {
@@ -128,10 +278,44 @@ body section.about-more .pic-area .about-sub-title span {
   font-weight: 600;
 }
 
+@media only screen and (max-width: 1250px) {
+  body section.about-more .pic-area .about-sub-title {
+    font-size: 4.5vw;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    text-align: center;
+  }
+}
+
+@media (max-width: 650px) {
+  body section.about-more .pic-area .about-sub-title {
+    font-size: 2em;
+    text-decoration: underline;
+    line-height: 30px;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  body section.about-more .pic-area {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 650px) {
+  body section.about-more .pic-area {
+    margin: 0px auto;
+  }
+}
+
 body section.about-more .text-area p {
   padding: 15px;
   font-size: 1.5em;
-  font-family: 'Lato', serif;
+  font-family: 'Oswald', sans-serif;
   text-align: justify;
 }
 
@@ -139,6 +323,24 @@ body section.about-more .text-area p span {
   color: #CF1925;
   font-weight: 600;
   font-size: 1.6em;
+}
+
+@media only screen and (max-width: 1250px) {
+  body section.about-more .text-area p {
+    margin: 0px 50px;
+  }
+}
+
+@media (max-width: 950px) {
+  body section.about-more .text-area p {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 650px) {
+  body section.about-more .text-area p {
+    margin: 0px 2%;
+  }
 }
 
 body footer {
@@ -190,6 +392,15 @@ body footer div.block .contacts p {
   margin-top: 12px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 1.2em;
+}
+
+@media (max-width: 650px) {
+  body footer div.block {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: auto auto auto;
+        grid-template-rows: auto auto auto;
+  }
 }
 
 body footer .copy {

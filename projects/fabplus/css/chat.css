@@ -37,6 +37,12 @@ a, a:active, a:visited {
   margin-bottom: 3px;
 }
 
+@media (max-width: 650px) {
+  .chatbox header {
+    display: none;
+  }
+}
+
 .chatbox .chats {
   padding: 10px;
   border-left: 1px solid rgba(177, 170, 170, 0.507);
@@ -83,5 +89,29 @@ a, a:active, a:visited {
 .chatbox .bottom a {
   text-decoration: none;
   color: #CF1925;
+}
+
+.chatbox .mobile-chat {
+  font-size: 2em;
+  background: #FFFFFF;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  padding: 10px;
+  line-height: 12px;
+  border-radius: 100%;
+  color: #CF1925;
+  -webkit-box-shadow: 0px 0px 20px rgba(128, 128, 128, 0.575);
+          box-shadow: 0px 0px 20px rgba(128, 128, 128, 0.575);
+  display: none;
+}
+
+@media (max-width: 650px) {
+  .chatbox .mobile-chat {
+    display: block;
+  }
 }
 /*# sourceMappingURL=chat.css.map */
