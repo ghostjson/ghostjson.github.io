@@ -323,6 +323,9 @@ body{
             padding-left: 10%;
             font-family: 'Lato', serif;
             font-weight: 600;
+            @include sm{
+                font-size: 0.6em;
+            }
         }
     }
 

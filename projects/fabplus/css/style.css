@@ -410,6 +410,12 @@ body footer .copy {
   font-weight: 600;
 }
 
+@media (max-width: 650px) {
+  body footer .copy {
+    font-size: 0.6em;
+  }
+}
+
 h4 {
   color: #CF1925;
   display: inline;
