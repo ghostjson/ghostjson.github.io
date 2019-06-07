@@ -40,8 +40,8 @@ $(document).ready(function () {
                 $(".chats, .bottom").hide();    
             });
         }
-        else{
-            $(".chats, .bottom, .chatbox header").hide();
-        }
+        // else{
+        //     $(".chats, .bottom, .chatbox header").hide();
+        // }
     });
 });
