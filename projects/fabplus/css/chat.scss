@@ -116,8 +116,12 @@ a, a:active, a:visited{
         box-shadow: 0px 0px 20px rgba(128, 128, 128, 0.575);
         display: none;
         @include sm{
-            display: block;
+            display: block; 
         }
+    }
+    @include sm{
+        right: 5px;
+        bottom: 0px;
     }
 
 }

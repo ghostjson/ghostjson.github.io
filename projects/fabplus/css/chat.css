@@ -114,4 +114,11 @@ a, a:active, a:visited {
     display: block;
   }
 }
+
+@media (max-width: 650px) {
+  .chatbox {
+    right: 5px;
+    bottom: 0px;
+  }
+}
 /*# sourceMappingURL=chat.css.map */
