@@ -42,21 +42,23 @@ body nav {
 }
 
 body nav div.logo img {
-  width: 90px;
-  padding-top: 5px;
-  padding-left: 250px;
+  width: 135px;
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-bottom: 10px;
 }
 
 @media (max-width: 950px) {
   body nav div.logo img {
-    padding-left: 40%;
+    padding-left: 10%;
+    width: 110px;
   }
 }
 
 @media (max-width: 650px) {
   body nav div.logo img {
     width: 75px;
-    padding-left: 30%;
+    padding-left: 10%;
   }
 }
 
@@ -71,8 +73,8 @@ body nav div.menu ul {
 
 body nav div.menu ul li {
   display: inline-block;
-  font-size: 1.3em;
-  line-height: 60px;
+  font-size: 1.6em;
+  line-height: 95px;
   padding-left: 12px;
   font-family: 'Oswald', serif;
   font-weight: 400;
@@ -93,7 +95,7 @@ body nav div.menu ul li:hover {
 
 @media only screen and (max-width: 1250px) {
   body nav div.menu ul li {
-    font-size: 1em;
+    font-size: 1.20em;
   }
 }
 

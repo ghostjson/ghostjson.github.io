@@ -50,15 +50,17 @@ body{
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.027), 0 6px 6px rgba(0, 0, 0, 0.116);
         div.logo{
             img{
-                width: 90px;
-                padding-top: 5px;
-                padding-left: 250px;
+                width: 135px;
+                padding-top: 10px;
+                padding-left: 30px;
+                padding-bottom: 10px;
                 @include md{
-                    padding-left: 40%;
+                    padding-left: 10%;
+                    width: 110px;
                 }
                 @include sm{
                     width: 75px;
-                    padding-left: 30%;
+                    padding-left: 10%;
                 }
             }
         }
@@ -69,8 +71,8 @@ body{
                 padding-right: 40px;
                 li{
                     display: inline-block;
-                    font-size: 1.3em;
-                    line-height: 60px;
+                    font-size: 1.6em;
+                    line-height: 95px;
                     padding-left: 12px;
                     font-family: 'Oswald', serif;
                     font-weight: 400;
@@ -85,7 +87,7 @@ body{
                         font-weight: 600;
                     }
                     @include lg{
-                        font-size: 1em;
+                        font-size: 1.20em;
                     }
                 }
             }
