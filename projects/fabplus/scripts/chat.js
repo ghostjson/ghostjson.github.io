@@ -34,14 +34,14 @@ $(document).ready(function () {
     });
     $(window).bind ('orientationchange', function ()
         {
-        if ($('body').width() > 650){
+        if ($(window).width() > 650){
             $('.mobile-chat').fadeOut();
             $(".chatbox header").show(function () {
                 $(".chats, .bottom").hide();    
             });
         }
-        // else{
-        //     $(".chats, .bottom, .chatbox header").hide();
-        // }
+        else{
+            $(".chats, .bottom, .chatbox header").hide();
+        }
     });
 });
