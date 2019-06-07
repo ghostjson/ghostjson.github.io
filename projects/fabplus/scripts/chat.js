@@ -21,6 +21,7 @@
 // });
 
 $(document).ready(function () {
+    $(".chats, .bottom").hide();
     $(window).resize(function () { 
         if ($('body').width() > 650){
             $(".chats, .bottom").hide();
