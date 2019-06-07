@@ -85,6 +85,9 @@ a, a:active, a:visited{
         }
         height: 200px;
         overflow-y: scroll;
+        @include sm{
+            display: none;
+        }
     }
     .bottom{
         border-top: $chat-border;

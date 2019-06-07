@@ -72,6 +72,12 @@ a, a:active, a:visited {
   float: right;
 }
 
+@media (max-width: 650px) {
+  .chatbox .chats {
+    display: none;
+  }
+}
+
 .chatbox .bottom {
   border-top: 1px solid rgba(177, 170, 170, 0.507);
   border-left: 1px solid rgba(177, 170, 170, 0.507);
