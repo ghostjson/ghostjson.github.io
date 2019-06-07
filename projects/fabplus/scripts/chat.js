@@ -32,7 +32,8 @@ $(document).ready(function () {
             $('.mobile-chat').fadeIn();
         }
     });
-    $(window).resize(function () { 
+    $(window).bind ('orientationchange', function ()
+        {
         if ($('body').width() > 650){
             $('.mobile-chat').fadeOut();
             $(".chatbox header").show(function () {
