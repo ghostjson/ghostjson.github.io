@@ -20,10 +20,29 @@
 	
 	<div class="middle">
 		<video class="sampleMovie" preload controls >
-			<source src="videos/Main12Apple720p.mp4"/>
-			<source src="videos/AndroidHandbrake.mp4"/>
-			Not supported by browser
+			<source src="videos/Main12Apple720p.mp4" type="video/mp4"/>
+			<source src="videos/Main12Apple540pT1.ogg" type="video/ogg">
+			<!-- <source src="videos/AndroidHandbrake.mp4"/> -->
 		</video>
+		
+		<!--[if lte IE 8]>
+		<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="275">
+			
+			<object type="application/x-shockwave-flash" data="videos/Main12Apple540pT1_1.swf" width="950" height="533.500">
+			
+				<param name="quality" value="high" />
+				<param name="wmode" value="window" />
+				
+				
+					
+				<div class="object-content">
+					<p>Please install or enable <a href="http://get.adobe.com/flashplayer/">Adobe Flash Player</a> to view this content.</p>
+				</div>
+				
+			</object>
+		
+		</object>
+		<![endif]-->
 	</div>
 					
 	</body>
