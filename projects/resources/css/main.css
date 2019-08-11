@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One|Quicksand|Roboto|Poppins');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* HEADER */
+
+body header{
+  width: 100%;
+  height: 280px;
+}
+
+body header .content-layer{
+  position: absolute;
+  z-index: 2;
+}
+
+body header .content-layer .subtitle{
+  margin-top: 20px;
+  color: #FFF;
+  font-weight: 600;
+  font-family: 'Quicksand', sans-serif;
+  margin-left: 12px;
+}
+
+body header .content-layer .title{
+  font-family: 'Fredoka One', cursive;
+  font-size: 3em;
+  color: #FFF;
+  margin-left: 100px;
+  margin-top: 50px;
+}
+
+body header .mic-image{
+  position: absolute;
+  left: 50%;
+  margin-left: -6vw;
+  margin-top: 110px;
+}
+
+body header .mic-image img{
+  width: 12vw;
+}
+
+body header .avatar{
+  position: absolute;
+  z-index: 2;
+  right: 100px;
+  top: 130px;
+}
+
+body header .avatar img{
+  height: 120px;
+  border-radius: 100%;
+}
+
+body header .design{
+  filter: drop-shadow(-1px 4px 6px rgba(0, 0, 0, 0.8));
+}
+
+
+body header .design-left{
+  background: blue;
+  height: 280px;
+  width: 100%;
+  position: absolute;
+  clip-path: polygon(0 0, 100% 0, 100% 35%, 0 100%);
+}
+
+body header .design-right{
+  background: rgba(72, 152, 255, 0.9);
+  height: 280px;
+  width: 100%;
+  position: absolute;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 35%);
+}
+/* HEADER END */
+
+/* BODY */
+body section.noti-body{
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+}
+
+body section.noti-body .left-side{
+}
+
+body section.noti-body .right-side{
+}
+
+body section.noti-body h2{
+  font-size: 2em;
+  font-family: 'Poppins', cursive;
+}
+
+.notifications{
+  margin-top: 20px;
+}
+
+.notifications .box{
+  width: 480px;
+  margin: 50px auto;
+  padding: 20px 50px;
+  padding-left: 25px;
+  font-size: 1.3em;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 15px;
+  text-align: left;
+  box-shadow: 0px 3px 11px #b8b0e0;
+  position: relative;
+  padding-bottom: 30px;
+  word-wrap: break-word;
+}
+
+.notifications .box .head .date{
+  color: #9E9E9E;
+  font-size: 0.8em;
+  font-family: 'Roboto';
+  font-weight:bold;
+  position: absolute;
+  right: 7px;
+  top: 7px;
+}
+
+.notifications .box .content{
+  padding-top: 10px;
+}
+
+.notifications .box .clap{
+  position: absolute;
+  background: white;
+  box-shadow: 0px 3px 11px #b8b0e0;
+  padding: 5px;
+  padding-bottom: 2px;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  bottom: -25px;
+  right: 100px;
+  cursor: pointer;
+  transition: box-shadow 0.5s, color 0.5s;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.notifications .box .clap:hover{
+  box-shadow: 0px 5px 20px #b8b0e0;
+  color: #4CAF50;
+}
+
+.notifications .box .clap.active{
+  color :#4CAF50;
+}
+
+.notifications .box .clap-dis{
+  position: absolute;
+  background: white;
+  box-shadow: 0px 3px 11px #b8b0e0;
+  padding: 5px;
+  padding-bottom: 2px;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  right: 40px;
+  bottom: -25px;
+  cursor: pointer;
+  transition: box-shadow 0.5s, color 0.5s;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.notifications .box .clap-dis:hover{
+  box-shadow: 0px 5px 20px #b8b0e0;
+  color: #F44336;
+}
+
+.notifications .box .clap-dis.active{
+  color :#F44336;
+}
+/* BODY END */
+
+/* MOBILE VERSION */
+@media only screen and (max-width: 1024px){
+  body header .content-layer .subtitle{
+    margin-top: 20px;
+    color: #FFF;
+    font-weight: 600;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.8em;
+  }
+
+  body header .avatar{
+    position: absolute;
+    right: 100px;
+    top: 140px;
+  }
+  body header .avatar img{
+    height: 10vw;
+    border-radius: 100%;
+  }
+  body section.noti-body{
+    margin-top: 200px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .notifications{
+    margin-top: 0px;
+  }
+  .notifications .box{
+    width: 80%;
+    margin: 40px auto;
+    margin-top: 10px;
+
+  }
+
+  .notifications .box .clap{
+    right: 130px;
+  }
+
+  .notifications .box .clap,.notifications .box .clap-dis{
+    width: 70px;
+    height: 70px;
+    font-size: 2em;
+    line-height: 70px;
+  }
+  .notifications .box .head .date{
+    font-size: 1.5em;
+  }
+}
